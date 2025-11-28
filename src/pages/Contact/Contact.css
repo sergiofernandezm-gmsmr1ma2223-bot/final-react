@@ -1,0 +1,106 @@
+.contact-fullscreen {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e3f2fd 0%, #90caf9 100%);
+  position: relative;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  padding: 120px 20px 80px;
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-title {
+  font-size: 72px;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 50px;
+  text-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 30px;
+  padding: 60px 50px;
+  box-shadow: 0 25px 70px rgba(0,0,0,0.25);
+  backdrop-filter: blur(12px);
+}
+
+.success-message {
+  background: #4caf50;
+  color: white;
+  padding: 16px;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  animation: fadeIn 0.6s ease;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-input {
+  padding: 18px 24px;
+  border: none;
+  border-radius: 16px;
+  background: #f8fbff;
+  font-size: 18px;
+  color: #0d47a1;
+  box-shadow: inset 0 4px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.contact-input:focus {
+  outline: none;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(66, 165, 245,0.3);
+  transform: translateY(-2px);
+}
+
+.contact-textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.contact-button {
+  background: linear-gradient(135deg, #1976d2, #42a5f5);
+  color: white;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+  min-width: 220px;
+}
+
+.contact-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(25,118,210,0.4);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.clouds { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; overflow: hidden; }
+.cloud { position: absolute; background: white; border-radius: 50px; opacity: 0.7; }
+.cloud1 { width: 320px; height: 110px; top: 12%; left: -100px; animation: float1 35s infinite linear; }
+.cloud2 { width: 420px; height: 130px; top: 28%; left: -200px; animation: float2 50s infinite linear; }
+.cloud3 { width: 280px; height: 100px; top: 42%; left: -150px; animation: float3 45s infinite linear; }
+
+@keyframes float1 { from { transform: translateX(-100px); } to { transform: translateX(calc(100vw + 400px)); } }
+@keyframes float2 { from { transform: translateX(-200px); } to { transform: translateX(calc(100vw + 500px)); } }
+@keyframes float3 { from { transform: translateX(-150px); } to { transform: translateX(calc(100vw + 400px)); } }

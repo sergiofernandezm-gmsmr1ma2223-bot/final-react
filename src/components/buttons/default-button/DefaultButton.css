@@ -1,0 +1,25 @@
+.default-button {
+  border-radius: 0.9em;
+  cursor: pointer;
+  padding: 0.8em 1.4em;
+  transition: all ease-in-out 0.25s;
+  font-size: 16px;
+  ;
+  font-weight: 600;
+  color: white;
+  border: none;
+}
+
+.default-button.primary {
+  background: linear-gradient(135deg, #5fbcf9, #1e90ff);
+  box-shadow: 0 4px 15px rgba(30, 144, 255, 0.4);
+}
+
+.default-button.primary:hover {
+  background: linear-gradient(135deg, #1e90ff, #0077be);
+  box-shadow: 0 8px 20px rgba(30, 144, 255, 0.5);
+}
+
+.default-button.large {
+  width: 100%;
+}
