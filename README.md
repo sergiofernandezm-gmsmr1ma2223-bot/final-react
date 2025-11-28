@@ -1,16 +1,30 @@
-# React + Vite
+# Clima Mundial
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Proyecto Final React – Curso 2025/2026**
 
-Currently, two official plugins are available:
+Aplicación con tiempo real de **100 ciudades del mundo**, buscador, detalle por ciudad y perfil aleatorio.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
+- 100 ciudades con datos reales (Open-Meteo API)
+- Buscador instantáneo
+- Tarjetas con icono (OpenWeatherMap API), temperatura y país
+- Detalle completo al hacer click
+- Perfil de usuario aleatorio (RandomUser.me)
+- Diseño moderno con nubes animadas y fondo fijo
+- 100% responsive
 
-## React Compiler
+## Tecnologías
+- React + Vite
+- React Router DOM v6
+- Axios
+- Open-Meteo API
+- RandomUser.me API
+- OpenWeatherMap API
+- CSS + Google Fonts
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Instalación
+```bash
+git clone https://github.com/sergiofernandezm-gmsmr1ma2223-bot/final-react.git
+cd final-react
+npm install
+npm run dev
